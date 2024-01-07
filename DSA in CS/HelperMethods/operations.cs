@@ -352,8 +352,10 @@ namespace DSA_in_CS.HelperMethods
             Console.WriteLine(new string('-', 50));
             Console.Write("Enter a value to search: ");
             int value = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine($"{string.Join(", ", sampleLists.sortedEvenList)}\nElement found at : {bs.BinarySearchValue(sampleLists.sortedOddList, value)}");
-            Console.WriteLine($"{string.Join(", ", sampleLists.emptyList)}\nElement found at : {bs.BinarySearchValue(sampleLists.sortedOddList, value)}");
+            Console.WriteLine(new string('-', 50));
+            Console.WriteLine($"List : {string.Join(", ", sampleLists.sortedOddList)}\nElement found at index: {bs.BinarySearchValue(sampleLists.sortedOddList, value)}");
+            Console.WriteLine($"List : {string.Join(", ", sampleLists.emptyList)}\nElement found at : {bs.BinarySearchValue(sampleLists.emptyList, value)}");
+            Console.WriteLine($"List : {string.Join(", ", sampleLists.sortedEvenList)}\nElement found at : {bs.BinarySearchValue(sampleLists.sortedEvenList, value)}");
         }
     }
 }
