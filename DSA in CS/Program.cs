@@ -54,6 +54,10 @@ do
             break;
 
         case 9:
+            _operations.linearSearch();
+            break;
+
+        case 10:
             Console.WriteLine(new string('-', 50));
             Console.WriteLine("Exiting application...");
             break;
@@ -63,4 +67,4 @@ do
             break;
     }
     
-} while (algo != 9);
+} while (algo != 10);
