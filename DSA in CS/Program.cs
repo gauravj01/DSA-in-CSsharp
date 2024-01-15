@@ -49,23 +49,26 @@ do
             _operations.bstOperation();
             break;
 
+        // Binary Search
         case 8:
             _operations.binarySearch();
             break;
         
+        // Linear Search
         case 9:
             _operations.linearSearch();
             break;
 
+        // Bubble Sort
         case 10:
             Console.WriteLine(new string('-', 50));
             _operations.bubbleSort();
             break;
 
         case 11:
-          Console.WriteLine(new string('-', 50));
-          Console.WriteLine("Exiting application...");
-          break;
+            Console.WriteLine(new string('-', 50));
+            Console.WriteLine("Exiting application...");
+            break;
 
         default:
             Console.WriteLine("Invalid Input");

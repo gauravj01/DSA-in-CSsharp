@@ -350,18 +350,24 @@ namespace DSA_in_CS.HelperMethods
         public void binarySearch()
         {
             BinarySearch bs = new BinarySearch();
-            Console.WriteLine(new string('-', 50));
             Console.Write("Enter a value to search: ");
             int value = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(new string('-', 50));
-            Console.WriteLine($"List : {string.Join(", ", sampleLists.sortedOddList)}\nElement found at index: {bs.BinarySearchValue(sampleLists.sortedOddList, value)}");
             Console.WriteLine($"List : {string.Join(", ", sampleLists.emptyList)}\nElement found at : {bs.BinarySearchValue(sampleLists.emptyList, value)}");
+            Console.WriteLine(new string('-', 30));
+            Console.WriteLine($"List : {string.Join(", ", sampleLists.sizeOne)}\nElement found at : {bs.BinarySearchValue(sampleLists.sizeOne, value)}");
+            Console.WriteLine(new string('-', 30));
+            Console.WriteLine($"List : {string.Join(", ", sampleLists.sortedOddList)}\nElement found at index: {bs.BinarySearchValue(sampleLists.sortedOddList, value)}");
+            Console.WriteLine(new string('-', 30));
             Console.WriteLine($"List : {string.Join(", ", sampleLists.sortedEvenList)}\nElement found at : {bs.BinarySearchValue(sampleLists.sortedEvenList, value)}");
+            Console.WriteLine(new string('-', 30));
+            Console.WriteLine($"List : {string.Join(", ", sampleLists.oddList)}\nElement found at : {bs.BinarySearchValue(sampleLists.oddList, value)}");
+            Console.WriteLine(new string('-', 30));
+            Console.WriteLine($"List : {string.Join(", ", sampleLists.evenList)}\nElement found at : {bs.BinarySearchValue(sampleLists.evenList, value)}");
         }
         public void linearSearch()
         {
             LinearSearch ls = new LinearSearch();
-            Console.WriteLine(new string('-', 50));
             Console.Write("Enter a value to search: ");
             int value = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(new string('-', 50));
@@ -381,12 +387,16 @@ namespace DSA_in_CS.HelperMethods
         public void bubbleSort()
         {
             BubbleSort buS = new BubbleSort();
-            Console.WriteLine(new string('-', 50));
             Console.WriteLine($"Og. Array: {string.Join(", ", sampleLists.oddList)}\nSo. Array: {string.Join(", ", buS.BubbleSortArray(sampleLists.oddList))}");
+            Console.WriteLine(new string('-', 30));
             Console.WriteLine($"Og. Array: {string.Join(", ", sampleLists.evenList)}\nSo. Array: {string.Join(", ", buS.BubbleSortArray(sampleLists.evenList))}");
+            Console.WriteLine(new string('-', 30));
             Console.WriteLine($"Og. Array: {string.Join(", ", sampleLists.sortedOddList)}\nSo. Array: {string.Join(", ", buS.BubbleSortArray(sampleLists.sortedOddList))}");
+            Console.WriteLine(new string('-', 30));
             Console.WriteLine($"Og. Array: {string.Join(", ", sampleLists.sortedEvenList)}\nSo. Array: {string.Join(", ", buS.BubbleSortArray(sampleLists.sortedEvenList))}");
+            Console.WriteLine(new string('-', 30));
             Console.WriteLine($"Og. Array: {string.Join(", ", sampleLists.emptyList)}\nSo. Array: {string.Join(", ", buS.BubbleSortArray(sampleLists.emptyList))}");
+            Console.WriteLine(new string('-', 30));
             Console.WriteLine($"Og. Array: {string.Join(", ", sampleLists.sizeOne)}\nSo. Array: {string.Join(", ", buS.BubbleSortArray(sampleLists.sizeOne))}");
         }
     }
