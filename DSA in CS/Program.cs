@@ -52,19 +52,23 @@ do
         case 8:
             _operations.binarySearch();
             break;
-
+        
         case 9:
             _operations.linearSearch();
             break;
 
         case 10:
             Console.WriteLine(new string('-', 50));
-            Console.WriteLine("Exiting application...");
+            _operations.bubbleSort();
             break;
+
+        case 11:
+          Console.WriteLine(new string('-', 50));
+          Console.WriteLine("Exiting application...");
+          break;
 
         default:
             Console.WriteLine("Invalid Input");
             break;
     }
-    
-} while (algo != 10);
+} while (algo != 11);
