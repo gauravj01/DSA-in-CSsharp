@@ -53,7 +53,12 @@ do
             _operations.binarySearch();
             break;
 
-        case 9:
+        case 10:
+            Console.WriteLine(new string('-', 50));
+            _operations.bubbleSort();
+            break;
+
+        case 11:
             Console.WriteLine(new string('-', 50));
             Console.WriteLine("Exiting application...");
             break;
@@ -63,4 +68,4 @@ do
             break;
     }
     
-} while (algo != 9);
+} while (algo != 11);

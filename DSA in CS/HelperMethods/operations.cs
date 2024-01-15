@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Collections;
 using System.Collections.Generic;
 using DSA_in_CS.Searching;
+using DSA_in_CS.Sorting;
 
 namespace DSA_in_CS.HelperMethods
 {
@@ -354,6 +355,18 @@ namespace DSA_in_CS.HelperMethods
             int value = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine($"{string.Join(", ", sampleLists.sortedEvenList)}\nElement found at : {bs.BinarySearchValue(sampleLists.sortedOddList, value)}");
             Console.WriteLine($"{string.Join(", ", sampleLists.emptyList)}\nElement found at : {bs.BinarySearchValue(sampleLists.sortedOddList, value)}");
+        }
+
+        public void bubbleSort()
+        {
+            BubbleSort buS = new BubbleSort();
+            Console.WriteLine(new string('-', 50));
+            Console.WriteLine($"Og. Array: {string.Join(", ", sampleLists.oddList)}\nSo. Array: {string.Join(", ", buS.BubbleSortArray(sampleLists.oddList))}");
+            Console.WriteLine($"Og. Array: {string.Join(", ", sampleLists.evenList)}\nSo. Array: {string.Join(", ", buS.BubbleSortArray(sampleLists.evenList))}");
+            Console.WriteLine($"Og. Array: {string.Join(", ", sampleLists.sortedOddList)}\nSo. Array: {string.Join(", ", buS.BubbleSortArray(sampleLists.sortedOddList))}");
+            Console.WriteLine($"Og. Array: {string.Join(", ", sampleLists.sortedEvenList)}\nSo. Array: {string.Join(", ", buS.BubbleSortArray(sampleLists.sortedEvenList))}");
+            Console.WriteLine($"Og. Array: {string.Join(", ", sampleLists.emptyList)}\nSo. Array: {string.Join(", ", buS.BubbleSortArray(sampleLists.emptyList))}");
+            Console.WriteLine($"Og. Array: {string.Join(", ", sampleLists.sizeOne)}\nSo. Array: {string.Join(", ", buS.BubbleSortArray(sampleLists.sizeOne))}");
         }
     }
 }
