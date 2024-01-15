@@ -353,8 +353,29 @@ namespace DSA_in_CS.HelperMethods
             Console.WriteLine(new string('-', 50));
             Console.Write("Enter a value to search: ");
             int value = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine($"{string.Join(", ", sampleLists.sortedEvenList)}\nElement found at : {bs.BinarySearchValue(sampleLists.sortedOddList, value)}");
-            Console.WriteLine($"{string.Join(", ", sampleLists.emptyList)}\nElement found at : {bs.BinarySearchValue(sampleLists.sortedOddList, value)}");
+            Console.WriteLine(new string('-', 50));
+            Console.WriteLine($"List : {string.Join(", ", sampleLists.sortedOddList)}\nElement found at index: {bs.BinarySearchValue(sampleLists.sortedOddList, value)}");
+            Console.WriteLine($"List : {string.Join(", ", sampleLists.emptyList)}\nElement found at : {bs.BinarySearchValue(sampleLists.emptyList, value)}");
+            Console.WriteLine($"List : {string.Join(", ", sampleLists.sortedEvenList)}\nElement found at : {bs.BinarySearchValue(sampleLists.sortedEvenList, value)}");
+        }
+        public void linearSearch()
+        {
+            LinearSearch ls = new LinearSearch();
+            Console.WriteLine(new string('-', 50));
+            Console.Write("Enter a value to search: ");
+            int value = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(new string('-', 50));
+            Console.WriteLine($"List : {string.Join(", ", sampleLists.emptyList)}\nElement found at index: {ls.LinearSearchValue(sampleLists.emptyList, value)}");
+            Console.WriteLine(new string('-', 30));
+            Console.WriteLine($"List : {string.Join(", ", sampleLists.sizeOne)}\nElement found at index: {ls.LinearSearchValue(sampleLists.sizeOne, value)}");
+            Console.WriteLine(new string('-', 30));
+            Console.WriteLine($"List : {string.Join(", ", sampleLists.sortedOddList)}\nElement found at index: {ls.LinearSearchValue(sampleLists.sortedOddList, value)}");
+            Console.WriteLine(new string('-', 30));
+            Console.WriteLine($"List : {string.Join(", ", sampleLists.sortedEvenList)}\nElement found at index: {ls.LinearSearchValue(sampleLists.sortedEvenList, value)}");
+            Console.WriteLine(new string('-', 30));
+            Console.WriteLine($"List : {string.Join(", ", sampleLists.oddList)}\nElement found at index: {ls.LinearSearchValue(sampleLists.oddList, value)}");
+            Console.WriteLine(new string('-', 30));
+            Console.WriteLine($"List : {string.Join(", ", sampleLists.evenList)}\nElement found at index: {ls.LinearSearchValue(sampleLists.evenList, value)}");            
         }
 
         public void bubbleSort()
