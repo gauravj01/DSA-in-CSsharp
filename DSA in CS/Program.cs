@@ -64,8 +64,13 @@ do
             Console.WriteLine(new string('-', 50));
             _operations.bubbleSort();
             break;
-
+        
         case 11:
+            Console.WriteLine(new string('-', 50));
+            _operations.selectionSort();
+            break;
+
+        case 12:
             Console.WriteLine(new string('-', 50));
             Console.WriteLine("Exiting application...");
             break;
@@ -74,4 +79,4 @@ do
             Console.WriteLine("Invalid Input");
             break;
     }
-} while (algo != 11);
+} while (algo != 12);

@@ -383,7 +383,6 @@ namespace DSA_in_CS.HelperMethods
             Console.WriteLine(new string('-', 30));
             Console.WriteLine($"List : {string.Join(", ", sampleLists.evenList)}\nElement found at index: {ls.LinearSearchValue(sampleLists.evenList, value)}");            
         }
-
         public void bubbleSort()
         {
             BubbleSort buS = new BubbleSort();
@@ -398,6 +397,25 @@ namespace DSA_in_CS.HelperMethods
             Console.WriteLine($"Og. Array: {string.Join(", ", sampleLists.emptyList)}\nSo. Array: {string.Join(", ", buS.BubbleSortArray(sampleLists.emptyList))}");
             Console.WriteLine(new string('-', 30));
             Console.WriteLine($"Og. Array: {string.Join(", ", sampleLists.sizeOne)}\nSo. Array: {string.Join(", ", buS.BubbleSortArray(sampleLists.sizeOne))}");
+            Console.WriteLine(new string('-', 30));
+            Console.WriteLine($"Og. Array: {string.Join(", ", sampleLists.arrayWithRepetition)}\nSo. Array: {string.Join(", ", buS.BubbleSortArray(sampleLists.arrayWithRepetition))}");
+        }
+        public void selectionSort()
+        {
+            SelectionSort seS = new SelectionSort();
+            Console.WriteLine($"Og. Array: {string.Join(", ", sampleLists.oddList)}\nSo. Array: {string.Join(", ", seS.SelectionSortArray(sampleLists.oddList))}");
+            Console.WriteLine(new string('-', 30));
+            Console.WriteLine($"Og. Array: {string.Join(", ", sampleLists.evenList)}\nSo. Array: {string.Join(", ", seS.SelectionSortArray(sampleLists.evenList))}");
+            Console.WriteLine(new string('-', 30));
+            Console.WriteLine($"Og. Array: {string.Join(", ", sampleLists.sortedOddList)}\nSo. Array: {string.Join(", ", seS.SelectionSortArray(sampleLists.sortedOddList))}");
+            Console.WriteLine(new string('-', 30));
+            Console.WriteLine($"Og. Array: {string.Join(", ", sampleLists.sortedEvenList)}\nSo. Array: {string.Join(", ", seS.SelectionSortArray(sampleLists.sortedEvenList))}");
+            Console.WriteLine(new string('-', 30));
+            Console.WriteLine($"Og. Array: {string.Join(", ", sampleLists.emptyList)}\nSo. Array: {string.Join(", ", seS.SelectionSortArray(sampleLists.emptyList))}");
+            Console.WriteLine(new string('-', 30));
+            Console.WriteLine($"Og. Array: {string.Join(", ", sampleLists.sizeOne)}\nSo. Array: {string.Join(", ", seS.SelectionSortArray(sampleLists.sizeOne))}");
+            Console.WriteLine(new string('-', 30));
+            Console.WriteLine($"Og. Array: {string.Join(", ", sampleLists.arrayWithRepetition)}\nSo. Array: {string.Join(", ", seS.SelectionSortArray(sampleLists.arrayWithRepetition))}");
         }
     }
 }
