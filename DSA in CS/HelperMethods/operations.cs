@@ -417,5 +417,23 @@ namespace DSA_in_CS.HelperMethods
             Console.WriteLine(new string('-', 30));
             Console.WriteLine($"Og. Array: {string.Join(", ", sampleLists.arrayWithRepetition)}\nSo. Array: {string.Join(", ", seS.SelectionSortArray(sampleLists.arrayWithRepetition))}");
         }
+
+        public void insertionSort()
+        {
+            InsertionSort inS = new InsertionSort();
+            Console.WriteLine($"Og. Array: {string.Join(", ", sampleLists.oddList)}\nSo. Array: {string.Join(", ", inS.InsertionSortArray(sampleLists.oddList))}");
+            Console.WriteLine(new string('-', 30));
+            Console.WriteLine($"Og. Array: {string.Join(", ", sampleLists.evenList)}\nSo. Array: {string.Join(", ", inS.InsertionSortArray(sampleLists.evenList))}");
+            Console.WriteLine(new string('-', 30));
+            Console.WriteLine($"Og. Array: {string.Join(", ", sampleLists.sortedOddList)}\nSo. Array: {string.Join(", ", inS.InsertionSortArray(sampleLists.sortedOddList))}");
+            Console.WriteLine(new string('-', 30));
+            Console.WriteLine($"Og. Array: {string.Join(", ", sampleLists.sortedEvenList)}\nSo. Array: {string.Join(", ", inS.InsertionSortArray(sampleLists.sortedEvenList))}");
+            Console.WriteLine(new string('-', 30));
+            Console.WriteLine($"Og. Array: {string.Join(", ", sampleLists.emptyList)}\nSo. Array: {string.Join(", ", inS.InsertionSortArray(sampleLists.emptyList))}");
+            Console.WriteLine(new string('-', 30));
+            Console.WriteLine($"Og. Array: {string.Join(", ", sampleLists.sizeOne)}\nSo. Array: {string.Join(", ", inS.InsertionSortArray(sampleLists.sizeOne))}");
+            Console.WriteLine(new string('-', 30));
+            Console.WriteLine($"Og. Array: {string.Join(", ", sampleLists.arrayWithRepetition)}\nSo. Array: {string.Join(", ", inS.InsertionSortArray(sampleLists.arrayWithRepetition))}");
+        }
     }
 }
