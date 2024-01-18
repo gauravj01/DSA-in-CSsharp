@@ -25,8 +25,9 @@ namespace DSA_in_CS.HelperMethods
                 "------------------------\n" +
                 "10. Bubble Sort\n" +
                 "11. Selection Sort\n" +
+                "12. Insertion Sort\n" +
                 "------------------------\n" +
-                "12. Exit");
+                "13. Exit");
             Console.Write("Choose Algorithm: ");
             int algo = 0;
             if (!int.TryParse(Console.ReadLine(), out algo))
